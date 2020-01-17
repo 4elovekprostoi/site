@@ -46,6 +46,7 @@ body {
 	left:0;
 	background-size:cover;
 	background-repeat:none;
+	background-position: top;
 	opacity:0;
 	-webkit-animation: anim_slides 30s linear infinite 0s;
 	-moz-animation: anim_slides 30s linear infinite 0s;
@@ -55,25 +56,25 @@ body {
 }
 
 .body_slides li:nth-child(1){
-	background-image: url(../img/banner1.png) 
+	background-image: url(../img/banner1.png);
 }
 .body_slides li:nth-child(2){
 	-webkit-animation-delay: 6.0s;
 	-moz-animation-delay: 6.0s;
-	background-image: url(../img/banner2.png) 
+	background-image: url(../img/banner2.png);
 }
 .body_slides li:nth-child(3){
 	-webkit-animation-delay: 12.0s;
 	-moz-animation-delay: 12.0s;
-	background-image: url(../img/banner3.png) 
+	background-image: url(../img/banner3.png);
 }
 .body_slides li:nth-child(4){
 	-webkit-animation-delay: 18.0s;
 	-moz-animation-delay: 18.0s;
-	background-image: url(../img/banner4.png) 
+	background-image: url(../img/banner4.png);
 }
 .body_slides li:nth-child(5){
 	-webkit-animation-delay: 24.0s;
 	-moz-animation-delay: 24.0s;
-	background-image: url(../img/banner5.png) 
+	background-image: url(../img/banner5.png);
 }

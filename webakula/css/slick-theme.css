@@ -79,11 +79,13 @@
 
 .slick-prev
 {
-    left: -25px;
+    /*left: -25px;*/
+    left: -2px;
 }
 [dir='rtl'] .slick-prev
 {
     right: -25px;
+    /*right: -8px;*/
     left: auto;
 }
 .slick-prev:before
@@ -99,7 +101,8 @@
 
 .slick-next
 {
-    right: -25px;
+     right: -2px;
+    /*right: -25px;*/
 }
 [dir='rtl'] .slick-next
 {
@@ -204,4 +207,12 @@
 {
     opacity: .75;
     color: black;
+}
+@media screen and (max-width: 453px) {
+  .slick-next {
+    right: 8px;
+  }
+  .slick-prev {
+    left: -8px;
+  }
 }

@@ -33,6 +33,7 @@ header{
 	transform: translateX(-50%);
 	justify-content: space-between;
 	align-items: center;
+	z-index: 2;
 }
 .top-info{
 	display: flex;
@@ -113,10 +114,14 @@ li::first-letter{
 	visibility:hidden ;
 	position: absolute;
 	list-style-type: none;
-	background-color: rgb(51, 151, 226);
-	opacity: 0.8;
-	box-shadow: -1.236px 3.804px 14.7px 0.3px rgba(0, 0, 0, 0.34);
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 516px;
 }
+.top-menu li ul li{
+	background-color: #3397e2cc;
+	}
 .drop{
 	display: none;
 }
@@ -132,8 +137,11 @@ li::first-letter{
 .top-menu li ul a{
 	font-size: 14px;
 	font-family: "Arial";
-	color: rgb(255, 255, 255);
+	color: #ececec;
 	font-weight: unset;
+}
+.top-menu li ul a:hover{
+	color: floralwhite;
 }
 .area{
 	position: absolute;
@@ -146,8 +154,8 @@ li::first-letter{
 	background-image: -ms-linear-gradient( -6deg, rgba(0, 76, 131, 0.4) 0%, rgba(25,44,74,0.32) 68%, rgba(34,51,77,0) 100%);
 	left: -1px;
 	top: 328px;
-	/*width: 1352px;*/
 	height: 228px;
+	z-index: 1;
 }
 .area-info{
 	margin-left: 375px;

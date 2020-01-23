@@ -1,4 +1,4 @@
-html {
+/*html {
 	min-height: 100%
 }
 body {
@@ -77,4 +77,16 @@ body {
 	-webkit-animation-delay: 24.0s;
 	-moz-animation-delay: 24.0s;
 	background-image: url(../img/banner5.png);
+}*/
+.header_slider{
+	height: 735px;
 }
+
+.header_slider div.bg-wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*.header_slider .slick-list,.header_slider .slick-list .slick-track{
+	height: 100%;
+}*/

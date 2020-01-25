@@ -41,7 +41,7 @@
 								<a href="" class="icon"><i class="fa fa-instagram"></i></a>		
 							</div>	
 						</div>
-						<div class="drop">
+<!-- 						<div class="drop">
 							<div class="drop-btn"><i class="fa fa-bars" aria-hidden="true"></i></div>
 							<div class="drop-wrap">
 								<div class="drop-logo"><a href="">кураж тур</a></div>
@@ -50,20 +50,40 @@
 									<a href="" class="drop-icon"><i class="fa fa-instagram"></i></a>		
 								</div>
 							</div>
-						</div>
-						<nav>
+						</div> -->
+						<nav class="navigation">
+							<input type="checkbox" name="toggle" id="menu" class="toggle-menu">
+							<label for="menu" class="toggle-menu">
+								<i class="fa fa-bars"></i>
+								<a href="">кураж тур</a>
+								<div class="toggle-networks">
+									<a href="" class="toggle-icon"><i class="fa fa-facebook-square"></i></a>
+									<a href="" class="toggle-icon"><i class="fa fa-instagram"></i></a>		
+								</div>
+							</label>
 							<ul class="top-menu">
-								<li><a href="#" class="sub-menu" id="tur">туры</a>
+								<li>
+									<input type="checkbox" name="toggle" class="toggle-sub" id="sub1">
+									<a href="#" class="sub-menu" id="tur">туры</a>
+									<label for="sub1" class="toggle-sub"></label>
 									<ul>
 										<li><a href="#">Горящие туры</a></li>
 										<li><a href="#">Поиск тура</a></li>
 										<li><a href="#">Туры по Украине</a></li>
 										<li><a href="#">Экскурсионные туры</a></li>
 										<li><a href="#">Week end туры</a></li>
+
+
+										<li><a href="#">Туры по Украине</a></li>
+										<li><a href="#">Экскурсионные туры</a></li>
+										<li><a href="#">Week end туры</a></li>
 									</ul>
 								</li>
 								<li><a href="#" id="ctr">страны</a></li>
-								<li><a href="#" class="sub-menu" id="usl">услуги</a>
+								<li>
+									<input type="checkbox" name="toggle" class="toggle-sub" id="sub2">
+									<a href="#" class="sub-menu" id="usl">услуги</a>
+									<label for="sub2" class="toggle-sub"></label>
 									<ul>
 										<li><a href="#">Авиабилеты</a></li>
 										<li><a href="#">Визовая поддержка</a></li>
@@ -96,10 +116,303 @@
 			</header>
 		</section>
 		<section class="main-wrap">
-			<div class="main-menu">
-				<span class="tours tour-active">Горящие туры</span><span class="tours">Популярные туры</span>
+			<!-- ----------------------------------------------------------------- -->
+			<div class="tabs">
+				<div class="tab">
+					<input type="radio" id="tab1" name="tab-group" checked>
+					<label for="tab1" class="tab-title">горящие туры</label> 
+					<section class="tab-content">
+						<div class="main">
+							<div class="slide">
+								<div class="slide-wrap">
+									<div class="slide-img" id="slide1">
+									</div>
+									<div class="slide-text">
+										<div class="slide-heading">
+											8 марта в Cyrene Sharm hotel
+											<span class="sp-date">(12.03.2018 — 19.03.2018)</span>
+										</div>
+										<hr>
+										<div class="slide-bottom-text">
+											Перелёт, питание по системе all inclusive, трансфер
+										</div>
+										<span class="price">1259</span>
+									</div> 
+									<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-wrap">
+									<div class="slide-img" id="slide2">
+									</div>
+									<div class="slide-text">
+										<div class="slide-heading">
+											8 марта в Cyrene Sharm hotel
+											<span class="sp-date">(12.03.2018 — 19.03.2018)</span>
+										</div>
+										<hr>
+										<div class="slide-bottom-text">
+											Перелёт, питание по системе all inclusive, трансфер
+										</div>
+										<span class="price">1234</span>
+									</div> 
+									<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-wrap">
+									<div class="slide-img" id="slide3">
+									</div>
+									<div class="slide-text">
+										<div class="slide-heading">
+											8 марта в Cyrene Sharm hotel
+											<span class="sp-date">(12.03.2018 — 19.03.2018)</span>
+										</div>
+										<hr>
+										<div class="slide-bottom-text">
+											Перелёт, питание по системе all inclusive, трансфер
+										</div>
+										<span class="price">5432</span>
+									</div> 
+									<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-wrap">
+									<div class="slide-img" id="slide4">
+									</div>
+									<div class="slide-text">
+										<div class="slide-heading">
+											8 марта в Cyrene Sharm hotel
+											<span class="sp-date">(12.03.2018 — 19.03.2018)</span>
+										</div>
+										<hr>
+										<div class="slide-bottom-text">
+											Перелёт, питание по системе all inclusive, трансфер
+										</div>
+										<span class="price">3344</span>
+									</div> 
+									<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-wrap">
+									<div class="slide-img" id="slide3">
+									</div>
+									<div class="slide-text">
+										<div class="slide-heading">
+											8 марта в Cyrene Sharm hotel
+											<span class="sp-date">(12.03.2018 — 19.03.2018)</span>
+										</div>
+										<hr>
+										<div class="slide-bottom-text">
+											Перелёт, питание по системе all inclusive, трансфер
+										</div>
+										<span class="price">5432</span>
+									</div> 
+									<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-wrap">
+									<div class="slide-img" id="slide4">
+									</div>
+									<div class="slide-text">
+										<div class="slide-heading">
+											8 марта в Cyrene Sharm hotel
+											<span class="sp-date">(12.03.2018 — 19.03.2018)</span>
+										</div>
+										<hr>
+										<div class="slide-bottom-text">
+											Перелёт, питание по системе all inclusive, трансфер
+										</div>
+										<span class="price">3344</span>
+									</div> 
+									<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-wrap">
+									<div class="slide-img" id="slide3">
+									</div>
+									<div class="slide-text">
+										<div class="slide-heading">
+											8 марта в Cyrene Sharm hotel
+											<span class="sp-date">(12.03.2018 — 19.03.2018)</span>
+										</div>
+										<hr>
+										<div class="slide-bottom-text">
+											Перелёт, питание по системе all inclusive, трансфер
+										</div>
+										<span class="price">5432</span>
+									</div> 
+									<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-wrap">
+									<div class="slide-img" id="slide4">
+									</div>
+									<div class="slide-text">
+										<div class="slide-heading">
+											8 марта в Cyrene Sharm hotel
+											<span class="sp-date">(12.03.2018 — 19.03.2018)</span>
+										</div>
+										<hr>
+										<div class="slide-bottom-text">
+											Перелёт, питание по системе all inclusive, трансфер
+
+										</div>
+										<span class="price">3344</span>
+
+									</div> 
+									<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div> 				
+				<div class="tab">
+					<input type="radio" id="tab2" name="tab-group">
+					<label for="tab2" class="tab-title">популярные туры</label> 
+					<section class="tab-content">
+						<div class="main">
+							<div class="slide">
+								<div class="slide-wrap">
+									<div class="slide-img" id="slide1">
+									</div>
+									<div class="slide-text">
+										<div class="slide-heading">
+											8 марта в Cyrene Sharm hotel
+											<span class="sp-date">(12.03.2018 — 19.03.2018)</span>
+										</div>
+										<hr>
+										<div class="slide-bottom-text">
+											Перелёт, питание по системе all inclusive, трансфер
+										</div>
+										<span class="price">1259</span>
+									</div> 
+									<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-wrap">
+									<div class="slide-img" id="slide2">
+									</div>
+									<div class="slide-text">
+										<div class="slide-heading">
+											8 марта в Cyrene Sharm hotel
+											<span class="sp-date">(12.03.2018 — 19.03.2018)</span>
+										</div>
+										<hr>
+										<div class="slide-bottom-text">
+											Перелёт, питание по системе all inclusive, трансфер
+										</div>
+										<span class="price">1234</span>
+									</div> 
+									<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-wrap">
+									<div class="slide-img" id="slide3">
+									</div>
+									<div class="slide-text">
+										<div class="slide-heading">
+											8 марта в Cyrene Sharm hotel
+											<span class="sp-date">(12.03.2018 — 19.03.2018)</span>
+										</div>
+										<hr>
+										<div class="slide-bottom-text">
+											Перелёт, питание по системе all inclusive, трансфер
+										</div>
+										<span class="price">5432</span>
+									</div> 
+									<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-wrap">
+									<div class="slide-img" id="slide4">
+									</div>
+									<div class="slide-text">
+										<div class="slide-heading">
+											8 марта в Cyrene Sharm hotel
+											<span class="sp-date">(12.03.2018 — 19.03.2018)</span>
+										</div>
+										<hr>
+										<div class="slide-bottom-text">
+											Перелёт, питание по системе all inclusive, трансфер
+										</div>
+										<span class="price">3344</span>
+									</div> 
+									<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-wrap">
+									<div class="slide-img" id="slide3">
+									</div>
+									<div class="slide-text">
+										<div class="slide-heading">
+											8 марта в Cyrene Sharm hotel
+											<span class="sp-date">(12.03.2018 — 19.03.2018)</span>
+										</div>
+										<hr>
+										<div class="slide-bottom-text">
+											Перелёт, питание по системе all inclusive, трансфер
+										</div>
+										<span class="price">5432</span>
+									</div> 
+									<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-wrap">
+									<div class="slide-img" id="slide4">
+									</div>
+									<div class="slide-text">
+										<div class="slide-heading">
+											8 марта в Cyrene Sharm hotel
+											<span class="sp-date">(12.03.2018 — 19.03.2018)</span>
+										</div>
+										<hr>
+										<div class="slide-bottom-text">
+											Перелёт, питание по системе all inclusive, трансфер
+										</div>
+										<span class="price">3344</span>
+									</div> 
+									<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-wrap">
+									<div class="slide-img" id="slide3">
+									</div>
+									<div class="slide-text">
+										<div class="slide-heading">
+											8 марта в Cyrene Sharm hotel
+											<span class="sp-date">(12.03.2018 — 19.03.2018)</span>
+										</div>
+										<hr>
+										<div class="slide-bottom-text">
+											Перелёт, питание по системе all inclusive, трансфер
+										</div>
+										<span class="price">5432</span>
+									</div> 
+									<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
+								</div>
+							</div>
+
+						</div>
+					</section>
+				</div>
 			</div>
-			<div class="main">
+			<!-- ----------------------------------------------------------------- -->
+		<!-- 	<div class="main-menu">
+				<span class="tours tour-active">Горящие туры</span><span class="tours">Популярные туры</span>
+			</div> -->
+			<!-- <div class="main">
 				<div class="slide">
 					<div class="slide-wrap">
 						<div class="slide-img" id="slide1">
@@ -246,9 +559,9 @@
 						<a href="" class="arrow-next"><i class="fa fa-angle-right"></i></a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</section>
-<!-- 		<section class="advantages">
+		<section class="advantages">
 			<div class="advantages-wrap">
 				<div class="advantages-heading">
 					НАШИ ПРЕИМУЩЕСТВА
@@ -333,7 +646,7 @@
 					</div>
 				</div>
 			</div>
-		</footer> -->
+		</footer>
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/jquery.maskedinput.min.js"></script>
 		<script src="js/inputmask.js"></script>

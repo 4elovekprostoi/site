@@ -6,7 +6,7 @@ $('.header_slider').slick({
   autoplay: true,
   autoplaySpeed: 5000,
   pauseOnHover: false,
-  arrows : false,
+  arrows: false,
   pauseOnFocus: false,
   swipe: false,
   responsive: [
@@ -14,7 +14,6 @@ $('.header_slider').slick({
     breakpoint: 992,
     settings: {
       autoplay: false,
-      slickGoTo:1
     }
   }
   ]

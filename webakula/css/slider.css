@@ -1,7 +1,63 @@
-
+.tabs {
+  position: relative; /* Относительное позиционирование */
+  padding-left: 20%;
+  margin-top: 70px;
+}
+.tab, .tab-title {
+  display: inline-block; /* Выстраиваем по горизонтали */
+}
+.tab input[type="radio"] { display: none; }
+.tab-title {
+  /*background: #ccc; */
+  /* Цвет фона */
+  padding: 5px 10px; /* Поля вокруг текста */
+  font-family: "Arial";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.5;
+  cursor: pointer;
+  /*text-transform: uppercase;*/
+  /*border: 1px solid #666; */
+  /* Параметры рамки */
+  border-bottom: none; /* Снизу линию убираем */
+}
+.tab-title:first-letter{
+  text-transform: uppercase;
+}
+.tab-content {
+  position: absolute; /* Абсолютное позиционирование */
+  /*border: 1px solid #666; */
+  /* Параметры рамки */
+  /*padding: 10px; */
+  /*Поля вокруг текста */
+  top: 70px;
+  left: 0; /* Размещаем у левого края */
+  width: 100% ; /* Ширина содержимого */
+  /*---------------------------------------*/
+  /*display: none; */
+  visibility: hidden;
+  /* Прячем вкладку */
+  /*---------------------------------------*/
+}
+.tab :checked + .tab-title {
+  color: #fbd341;
+  position: relative; /* Относительное позиционирование */
+  background: #fff; /* Цвет фона */
+  /*top: 1px; */
+  /* Сдвигаем вниз */
+  z-index: 1; /* Отображаем поверх содержимого */
+}
+.tab :checked ~ .tab-content {
+  /*---------------------------------------*/
+  /*display: block;*/
+  visibility: visible; 
+  /* Показываем активную вкладку */
+  /*---------------------------------------*/
+}
 .main-wrap {
-  height: 440px;
+  /*height: 440px;*/
   width: 100%;
+  padding-bottom: 300px;
 }
 .main-menu{
   width: 1140px;
@@ -16,7 +72,7 @@
 
 }
 .tours:first-child{
-   margin-right: 30px;
+ margin-right: 30px;
 }
 .tour-active{
   color: #fbd341;

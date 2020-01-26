@@ -3,61 +3,26 @@ $(document).ready(function(){
 	$("#email").inputmask("email");
 });
 
-// $('#footer-form').on('submit', function(event) {
-// 	if (validateForm()) {
-// 		event.preventDefault();
-// 	}
-// });
+$('#footer-form').on('submit', function(event) {
+	if (validateForm()) {
+		event.preventDefault();
+	}
+});
 
 
+function validateForm() {
+	var select_check = false;
+	if ( $("#forms-select").val() == 1 ) {
+		select_check = true;
+		console.log('select: '+ select_check);
+		$(".form-select").append("<label id='select-error' class='select-error' for='select'>Bыберите страну</label>");
+	}else{
+		$(".form-select label").remove()
+	};
+	$("#forms-select").toggleClass('error', select_check );
 
-
-
-
-
-// function validateForm() {
-// 	var name_check = false;
-// 	var email_check = false;
-// 	var phone_check = false;
-// 	var select_check = false;
-
-// 	$(".error").removeClass( "error" );
-// 	var el_l= $("#name");
-// 	if ( el_l.val().length < 2 ) {
-// 		name_check = true;
-// 		console.log('name: '+ name_check);
-// 	} 
-// 	$("#name").toggleClass('error', name_check );
-
-// 	var reg= /^\w+([\.-]?\w+)*@(((([a-z0-9]{2,})|([a-z0-9][-][a-z0-9]+))[\.][a-z0-9])|([a-z0-9]+[-]?))+[a-z0-9]+\.([a-z]{2}|(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum))$/i;
-// 	var el_e= $("#email");
-// 	if (el_e.val()) {
-// 		if (reg.test( el_e.val() )) {
-// 			email_check = false;
-// 		} else {
-// 			email_check = true;
-// 		}
-// 	} else {
-// 		email_check = true;
-// 	}
-// 	$("#email").toggleClass('error', email_check );
-
-// 	var el_l    = $("#phone");
-// 	if ( el_l.val().length < 10 ) {
-// 		phone_check = true;
-// 		console.log('phone: '+ phone_check);
-// 	} 
-// 	$("#phone").toggleClass('error', phone_check );
-
-// 	if ( $("#forms-select").val() == 1 ) {
-// 		select_check = true;
-// 		console.log('select: '+ select_check);
-// 	}
-// 	$("#forms-select").toggleClass('error', select_check );
-
-
-// 	return ( name_check || email_check || phone_check || select_check );
-// }
+	return (select_check );
+}
 
 $("#footer-form").validate({
 	rules: {
@@ -76,30 +41,15 @@ $("#footer-form").validate({
 	},
 	messages:{
 		email:{
-			required:"*"
+			required:"Поле обязательно для заполнения",
+			email:"Введите верный email"
 		},
 		name:{
-			required:"*"
+			required:"Поле обязательно для заполнения",
+			minlength:"Не менее {0}-х символов"
 		},
 		phone:{
-			required:"*"
+			required:"Поле обязательно для заполнения"
 		}
 	}
-});
-jQuery('#footer-form').validate({
-    showErrors: function(errorMap, errorList) {
-        // Do nothing here
-    },
-    onfocusout: false,
-    onkeyup: false,
-    rules: {
-        email: {
-            required: true
-        }
-    },
-    messages: {
-        email: {
-            required: 'The email is required'
-        }
-    }
 });
